@@ -16,6 +16,10 @@
 		public function result($radius) {
 			return ($this->tezlik/(3.6)*$this->tezlik/(3.6))/$radius;
 		} 
+		public function oddiy1() {
+			echo '<br>Metod = '.__METHOD__.'';
+			echo '<br>Class = '.__CLASS__.'';
+		}
 	}
 
 	$damas = new Mashina;
@@ -57,5 +61,6 @@
 	echo "mers 5km masofani ",$mers->hisoblash(5000)," minutda bosib utadi","<br>";
 	echo "captiva 5km masofani ",$captiva->hisoblash(5000)," minutda bosib utadi","<br>";
 	
-	echo $mers->result(25);
+	//echo $mers->result(25);
+	echo $mers->oddiy1();
  ?>
