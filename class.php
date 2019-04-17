@@ -10,8 +10,11 @@
 			echo "Metod...";
 		}
 		public function hisoblash($masofa) {
-			$vaqt = $masofa / $this->tezlik;
-			return $vaqt;
+			return $masofa / $this->tezlik;
+			
+		}
+		public function result($radius) {
+			return ($this->tezlik/(3.6)*$this->tezlik/(3.6))/$radius;
 		} 
 	}
 
@@ -29,7 +32,7 @@
 	$mers = new Mashina;
 	$mers->model = 'mers 200';
 	$mers->rangi = 'ko`k';
-	$mers->tezlik = '240';
+	$mers->tezlik = '39';
 	$mers->narxi = '30000';
 	$mers->quvvat = '200 ot kuchi';
 
@@ -40,7 +43,7 @@
 	$captiva = new Mashina;
 	$captiva->model = 'captiva';
 	$captiva->rangi = 'qora';
-	$captiva->tezlik = '220';
+	$captiva->tezlik = '120';
 	$captiva->narxi = '27000';
 	$captiva->quvvat = '184 ot kuchi';
 
@@ -54,4 +57,5 @@
 	echo "mers 5km masofani ",$mers->hisoblash(5000)," minutda bosib utadi","<br>";
 	echo "captiva 5km masofani ",$captiva->hisoblash(5000)," minutda bosib utadi","<br>";
 	
+	echo $mers->result(25);
  ?>
