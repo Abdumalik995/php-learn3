@@ -18,7 +18,7 @@
 	$damas = new Mashina;
 	$damas->model = 'damas';
 	$damas->rangi = 'oq';
-	$damas->tezlik = '140';
+	$damas->tezlik = '100';
 	$damas->narxi = '7000';
 	$damas->quvvat = '38 ot kuchi';
 
@@ -50,8 +50,8 @@
 	//echo "$captiva->model narxi $captiva->narxi, quvvati $captiva->quvvat"."ga ega".", rangi $captiva->rangi"."<br>";
 
 	//echo "Uchala avtomobil umimiy narxi = ", $damas->narxi+$mers->narxi+$captiva->narxi;
-	echo "Damas 5km masofani ",$damas->hisoblash(2000)," minutda bosib utadi","<br>";
-	echo "mers 5km masofani ",$mers->hisoblash(2000)," minutda bosib utadi","<br>";
-	echo "captiva 5km masofani ",$captiva->hisoblash(2000)," minutda bosib utadi","<br>";
+	echo "Damas 5km masofani ",$damas->hisoblash(5000)," minutda bosib utadi","<br>";
+	echo "mers 5km masofani ",$mers->hisoblash(5000)," minutda bosib utadi","<br>";
+	echo "captiva 5km masofani ",$captiva->hisoblash(5000)," minutda bosib utadi","<br>";
 	
  ?>
