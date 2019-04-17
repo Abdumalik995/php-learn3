@@ -50,7 +50,8 @@
 	//echo "$captiva->model narxi $captiva->narxi, quvvati $captiva->quvvat"."ga ega".", rangi $captiva->rangi"."<br>";
 
 	//echo "Uchala avtomobil umimiy narxi = ", $damas->narxi+$mers->narxi+$captiva->narxi;
-	echo $damas->hisoblash(200);
-	echo $mers->hisoblash(200);
-	echo $captiva->hisoblash(200);
+	echo "Damas 5km masofani ",$damas->hisoblash(2000)," minutda bosib utadi","<br>";
+	echo "mers 5km masofani ",$mers->hisoblash(2000)," minutda bosib utadi","<br>";
+	echo "captiva 5km masofani ",$captiva->hisoblash(2000)," minutda bosib utadi","<br>";
+	
  ?>
