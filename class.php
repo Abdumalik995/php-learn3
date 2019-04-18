@@ -109,4 +109,25 @@
  	}
  	$jiguli = new M('Lada', 80, 'sariq');
  	$damas = new M('Daewoo', 50, 'sariq');
+
+
+
+
+ 	class Tovar {
+ 		public $turi;
+ 		public $narxi;
+ 		public $sana;
+ 		public $muddati;
+ 		public function qiymatlar() {
+ 			//return $this->turi,$this->narxi,$this->sana;
+ 		}
+ 	}
+
+ 	$komp = new Tovar;
+ 	$komp->turi = 'elektron';
+ 	$komp->narxi = 500;
+ 	$komp->sana = '20.12.18';
+ 	$komp->muddati = '3';
+ 	echo '<br>';
+ 	print_r($komp);
  ?>
