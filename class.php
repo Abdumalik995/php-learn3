@@ -64,30 +64,49 @@
 	//echo $mers->result(25);
 	//echo $mers->oddiy1();
 
-	class kompyuter {
+	class Kompyuter {
 		public $brend;
-		public $version;
+		public $version = "core i5";
 		public $cpu;
 		public $ozu;
+		public function win() {
+			echo "Ozu xotirasi = ", $this ->ozu;
+		}
+		public function __construct() {
+			//echo '<br>',$this->version;
+		}
 	}
 
-	$acer = new kompyuter;
+	$acer = new Kompyuter;
 	$acer->brend = 'Acer';
 	$acer->version = 'core i5';
 	$acer->cpu = '340 GH';
 	$acer->ozu = '8 GB';
 
-	echo "<pre>";	
+	/*echo "<pre>";	
 	print_r($acer);
-	echo "</pre>";
+	echo "</pre>";*/
 
-	$hp = new kompyuter;
-	$acer->brend = 'HP';
-	$acer->version = 'core i7';
-	$acer->cpu = '340 GH';
-	$acer->ozu = '8 GB';
+	$hp = new Kompyuter;
+	$hp->brend = 'HP';
+	$hp->version = 'core i7';
+	$hp->cpu = '340 GH';
+	$hp->ozu = '8 GB';
 
-	echo "<pre>";	
-	print_r($acer);
+	/*echo "<pre>";	
+	print_r($hp);
 	echo "</pre>";
+	$acer->win();*/
+
+ 	class M {
+ 		public $model = "Chevrolet";
+ 		public $tezlik;
+ 		public $rangi;
+
+ 		public function __construct($model, $tezlik, $rangi) {
+ 			echo '<br>',$model;
+ 		}
+ 	}
+ 	$jiguli = new M('Lada', 80, 'sariq');
+ 	$damas = new M('Daewoo', 50, 'sariq');
  ?>
