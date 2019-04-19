@@ -15,8 +15,21 @@
 		}
 	}
 
-	$matiz = new Mashina;
+	/*$matiz = new Mashina;
 	$matiz->oddiy();
 	$isuzu = new Avtobus;
-	$isuzu->oddiy();
+	$isuzu->oddiy();*/
+
+
+	class Texnika {
+		const TURI = "maishiy";
+		public $quvvat_vaqti;
+		public $vazifasi;
+		protected $d;
+		public function win() {
+			
+		}
+		
+	}
+
  ?>
