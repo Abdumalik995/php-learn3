@@ -63,4 +63,5 @@
 	$isuzu->tezlik = '50';
 	$isuzu->yoqilgi_sarfi = '15';
 	//echo '<br>',$isuzu->yoqilgi_hisoblash(300);
+	echo '<br>',$isuzu->vaqt1(20, 7, 20);
  ?>
