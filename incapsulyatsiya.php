@@ -11,11 +11,20 @@
 		}
 	}
 
+	class Data extends Baza {
+
+		function xato2() {
+			echo "<br>".$this->a;
+			echo "<br>".$this->b;
+			echo "<br>".$this->c;
+		}
+	}
+
 	$obyekt = new Baza;
 	echo '<br>'.$obyekt->a;
 	//echo '<br>'.$obyekt->b;
 	echo '<br>'.$obyekt->xato();
-	echo '<br>'.$obyekt->c;
-	$obyekt2 = new Baza;
-	echo '<br>'.$obyekt2->a;
+	//echo '<br>'.$obyekt->c;
+	$obyekt2 = new Data;
+	echo '<br>'.$obyekt2->xato2();
  ?>
