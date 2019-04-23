@@ -32,6 +32,7 @@
 		function Chop_etish() {
 			echo "<br>Mavzusi: ".$this->name;
 			echo "<br>".$this->anoss;
+			echo "<img src='rasm/$this->img' style='width:100px'>";
 
 		}
 	}
@@ -40,6 +41,7 @@
 		function Chop_etish() {
 			echo "<br>Mavzusi: ".$this->name;
 			echo "<br>".$this->anoss;
+			echo "<img src='rasm/$this->img' style='width:100px'>";
 
 		}
 	}
